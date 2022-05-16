@@ -1,4 +1,10 @@
 pr: none
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'azure-resource-connection'
+    scriptType: 'bash'
+    scriptLocation: 'scriptPath'
+    scriptPath: 
 trigger: none
 
 variables:
